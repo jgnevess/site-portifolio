@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>joaogabriel:~$ Portfólio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top px-5">
+        <div class="container-fluid">
+            <a class="prompt" href="#">joaogabriel:~$</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item mx-3 py-2"><a href="#start">Início</a></li>
+                    <li class="nav-item mx-3 py-2"><a href="#whoami">Sobre</a></li>
+                    <li class="nav-item mx-3 py-2"><a href="#skills">Skills</a></li>
+                    <li class="nav-item mx-3 py-2"><a href="#projects">Projetos</a></li>
+                    <li class="nav-item mx-3 py-2"><a href="#contact">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main data-bs-spy="scroll" data-bs-target="#navbar-example2" tabindex="0">
+        <section id="start">
+            <div class="terminal-line">
+                <span class="prompt">joaogabriel:~$</span>
+                <span class="typing" id="typewriter"></span><span class="cursor">█</span>
+            </div>
+        </section>
+
+        <section id="whoami">
+            <div class="terminal-line">
+                <span class="prompt">joaogabriel:~$</span> whoami<br><br>
+                Sou João Gabriel, estudante de Análise e Desenvolvimento de Sistemas pela UNIP, com previsão de
+                conclusão em
+                dezembro de 2025.<br><br>
+                Atualmente foco meu tempo e energia em desenvolvimento backend, principalmente com Java, Spring Boot e
+                banco de dados relacionais. Também tenho experiência com .NET.<br><br>
+                Gosto de escrever código limpo, testar bem o que faço e deixar o sistema rodando redondo, sempre com a
+                cabeça no terminal.<br><br>
+                Meu ambiente favorito? Linux (Debian), um terminal aberto, café na mesa e teclado no ritmo.<br><br>
+                Além do código, curto treinar, automatizar o que der, e fuçar em interfaces leves como o i3 ou o XFCE.
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="terminal-line">
+                <span class="prompt">joaogabriel:~$</span> apt list --installed<br><br>
+                java<br>
+                spring-boot<br>
+                .NET<br>
+                docker<br>
+                linux<br>
+                git<br>
+                SQL<br>
+                NoSql
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="terminal-line">
+                <span class="prompt">joaogabriel:~$</span> cat projetos.txt<br><br>
+                <pre id="repos"></pre>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="terminal-line">
+                <span class="prompt">joaogabriel:~$</span> cat contatos.txt<br><br>
+                <a href="https://www.github.com/jgnevess" target="_blank">github</a><br>
+                <a href="https://www.linkedin.com/in/jgneves" target="_blank">linkedin</a>
+            </div>
+        </section>
+    </main>
+    <script src="js/script.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

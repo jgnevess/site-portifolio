@@ -1,0 +1,66 @@
+:root {
+    --bg: #000;
+    --fg: #E0E0E0;
+    --gf-2: #AAAAAA;
+    --nav-bg: rgb(0, 0, 0, 0.55);
+    --nav-border: 1px solid #111;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--fg);
+    font-family: 'Fira Code', monospace;
+    padding-top: 70px;
+}
+
+.cursor {
+    display: inline-block;
+    animation: blink 0.8s step-end infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.prompt {
+    color: var(--gf-2);
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}
+
+a {
+    color: var(--fg);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--gf-2);
+}
+
+.navbar {
+    background-color: var(--nav-bg) !important;
+    backdrop-filter: blur(4px);
+    border-bottom: var(--nav-border);
+}
+
+.nav-item a.active {
+  color: var(--gf-2);
+  font-weight: bold;
+}
+
+#typewriter {
+  transition: all 0.3s ease-in-out;
+}
